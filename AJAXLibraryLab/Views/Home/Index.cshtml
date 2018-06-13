@@ -16,9 +16,9 @@
 <div class="space">
     
     <input type="text" id="year" class="form-control" style="display:inline"
-           onkeydown="search()" placeholder="Year Published"/>
+           onchange="search()" placeholder="Year Published"/>
     
-    <input type="text" id="publsiher" class="form-control" style="display:inline"
+    <input type="text" id="publisher" class="form-control" style="display:inline"
            oninput="search()" placeholder="Publisher"/>
 </div>
 
@@ -181,9 +181,7 @@
                     alert("Error" + response.responseText);
                 }
             }
-
         );
-    }
-
-    
+    }   
 </script>
+
